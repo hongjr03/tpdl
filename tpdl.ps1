@@ -42,17 +42,17 @@ Installs to:
 function Fail {
     param([string] $Message)
     Write-Error $Message
-    exit 1
+    return 1
 }
 
 if ($Help) {
     Show-Usage
-    exit 0
+    return 0
 }
 
 if ([string]::IsNullOrWhiteSpace($Repository)) {
     Show-Usage
-    exit 1
+    return 1
 }
 
 function Resolve-FullPath {
@@ -338,7 +338,7 @@ try {
         if (-not $Force) {
             Write-Host "Already installed $spec"
             Write-Host $destination
-            exit 0
+            return 0
         }
         Remove-Item -LiteralPath $destination -Recurse -Force
     }

@@ -10,13 +10,13 @@ instead of Typst Universe.
 - PowerShell:
 
    ```powershell
-   & ([scriptblock]::Create((irm https://raw.githubusercontent.com/hongjr03/tpdl/v0.1.0/tpdl.ps1))) https://github.com/hongjr03/ouc-bachelor-thesis.git -Ref v0.3.1
+   & ([scriptblock]::Create((irm https://raw.githubusercontent.com/hongjr03/tpdl/v0.1.0/tpdl.ps1))) https://github.com/owner/package-repo.git -Ref v0.1.0
    ```
 
 - Bash:
 
    ```bash
-   curl -fsSL https://raw.githubusercontent.com/hongjr03/tpdl/v0.1.0/tpdl.sh | bash -s -- https://github.com/hongjr03/ouc-bachelor-thesis.git --ref v0.3.1
+   curl -fsSL https://raw.githubusercontent.com/hongjr03/tpdl/v0.1.0/tpdl.sh | bash -s -- https://github.com/owner/package-repo.git --ref v0.1.0
    ```
 
 ### Local scripts
